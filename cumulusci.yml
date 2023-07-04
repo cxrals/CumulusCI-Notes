@@ -1,0 +1,43 @@
+minimum_cumulusci_version: "3.60.0"
+project:
+    name: cciTest
+    package:
+        name: cciTest
+        api_version: "56.0"
+    git:
+        default_branch: "main"
+    source_format: sfdx
+
+orgs:
+    scratch:
+        dev_2:
+            config_file: orgs/dev.json
+            days: 30
+        beta:
+            config_file: orgs/beta.json
+            days: 30
+
+tasks:
+    populate_data:
+        description: populate project related data in the org
+        class_path: cumulusci.tasks.apex.anon.AnonymousApexTask
+        options:
+            path: scripts/populateData.cls
+            apex: populateData();
+
+    enable_knowledge_user:
+        description: populate project related data in the org
+        class_path: cumulusci.tasks.apex.anon.AnonymousApexTask
+        options:
+            path: scripts/enableKnowledgeUser.cls
+            apex: enableKnowledgeUser();
+
+    deploy_force_app:
+        description: deploy components from force-app
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: force-app/main/default
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 80

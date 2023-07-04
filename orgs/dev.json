@@ -1,0 +1,63 @@
+{
+    "orgName": "Dev Org",
+    "edition": "Developer",
+    
+    "features": [
+        "API",
+        "Knowledge",
+        "Communities",
+        "EnableSetPasswordInApi",
+        "ServiceCloud",
+        "ServiceUser",
+        "Sites",
+        "LiveMessage",
+        "SLACK"
+    ],
+
+    "settings": {
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+
+        "knowledgeSettings":{
+            "enableKnowledge" : true,
+            "enableLightningKnowledge":true
+        },
+
+        "communitiesSettings": {
+            "enableNetworksEnabled": true
+        },
+
+        "chatterSettings": {
+            "enableChatter": true
+        },
+
+        "userManagementSettings": {
+            "enableNewProfileUI": true
+        },
+
+        "securitySettings": {
+            "enableAdminLoginAsAnyUser": true,
+            "sessionSettings": {
+                "forceRelogin": false
+            }
+        },
+
+        "incidentMgmtSettings": {
+            "enableEmailBroadcastType": true    
+        },
+
+        "languageSettings": {
+            "enableTranslationWorkbench": true
+        },
+
+        "liveMessageSettings": {
+            "enableLiveMessage": true
+        },
+
+        "platformSlackSettings" : {
+            "slackCapabilitiesEnabled": true
+        }
+    }
+}
+  
