@@ -17,3 +17,8 @@
 
 ### Documentation on scratch org creation 
 [https://cumulusci.readthedocs.io/en/stable/scratch-orgs.html](https://cumulusci.readthedocs.io/en/stable/scratch-orgs.html)
+
+# Snowfakery Notes
+
+### Generate and load data from a Snowfakery recipe
+`cci task run snowfakery --recipe snowfakeryData/Account.recipe.yml --run-until-recipe-repeated 300 --org dev_2`

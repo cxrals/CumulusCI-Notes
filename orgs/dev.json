@@ -10,8 +10,7 @@
         "ServiceCloud",
         "ServiceUser",
         "Sites",
-        "LiveMessage",
-        "SLACK"
+        "LiveMessage"
     ],
 
     "settings": {
@@ -53,10 +52,6 @@
 
         "liveMessageSettings": {
             "enableLiveMessage": true
-        },
-
-        "platformSlackSettings" : {
-            "slackCapabilitiesEnabled": true
         }
     }
 }
